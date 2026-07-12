@@ -1,0 +1,6 @@
+.site-header {
+  background: rgba(4, 16, 25, 0.9);
+  border-bottom-color: rgba(142, 208, 222, 0.22);
+  box-shadow: 0 10px 34px rgba(2, 10, 15, 0.18);
+  backdrop-filter: blur(18px) saturate(120%);
+}
