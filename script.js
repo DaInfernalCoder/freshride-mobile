@@ -14,21 +14,4 @@ nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =
   document.body.classList.remove('menu-open');
 }));
 
-document.querySelector('#quote-form')?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const subject = `Fresh Ride quote request — ${data.get('vehicle')}`;
-  const body = [
-    `Name: ${data.get('name')}`,
-    `Email: ${data.get('email')}`,
-    `Phone: ${data.get('phone') || 'Not provided'}`,
-    `Vehicle: ${data.get('vehicle')}`,
-    `Service: ${data.get('service')}`,
-    '',
-    'Location and details:',
-    data.get('details'),
-  ].join('\n');
-  window.location.href = `mailto:hello@freshridemobile.shop?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-});
-
 document.querySelector('#year').textContent = new Date().getFullYear();
