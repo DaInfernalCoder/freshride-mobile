@@ -48,9 +48,9 @@ Complete the remaining code-backed SEO/GEO plan for the existing Houston mobile 
 
 ## Current state
 
-The site is live in Vercel production. Deployment `dpl_GbGE9AVMQZx7HA2TvKzvmNfAenp9` is Ready and aliased to both `https://freshridemobile.shop` and `https://www.freshridemobile.shop`. The apex homepage, pricing page, clean service URL, `llms.txt`, and sitemap all return HTTPS 200 responses. Chromium desktop/mobile QA also passes against the live apex domain for the homepage, pricing page, Interior Reset page, and Katy page with no layout, navigation, console, or external-font errors.
+The site is live in Vercel production. The latest connected `main` deployment is Ready and aliased to both `https://freshridemobile.shop` and `https://www.freshridemobile.shop`. The apex homepage, pricing page, clean service URL, `llms.txt`, and sitemap all return HTTPS 200 responses. Chromium desktop/mobile QA also passes against the live apex domain for the homepage, pricing page, Interior Reset page, and Katy page with no layout, navigation, console, or external-font errors.
 
-The implementation commit is `05cd246` on GitHub `DaInfernalCoder/freshride-mobile` `main`. A follow-up handoff commit records this production state and makes the browser QA base URL configurable.
+The implementation commit is `05cd246` on GitHub `DaInfernalCoder/freshride-mobile` `main`. The handoff commits record this production state and make the browser QA base URL configurable.
 
 ## Blocker
 
