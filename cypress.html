@@ -7,9 +7,9 @@
     <meta name="description" content="Mobile auto detailing in Cypress, TX. Interior and exterior detailing at your driveway or workplace, including Bridgeland, Towne Lake, Fairfield. Call +1 346-489-2266." />
     <link rel="canonical" href="https://freshridemobile.shop/cypress" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/assets/fonts/barlow-800.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts.css" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/header-contrast.css" />
     <title>Mobile Auto Detailing in Cypress, TX | Fresh Ride Mobile</title>
@@ -67,6 +67,32 @@
       }
     },
     {
+      "@type": "WebSite",
+      "@id": "https://freshridemobile.shop/#website",
+      "url": "https://freshridemobile.shop/",
+      "name": "Fresh Ride Mobile",
+      "publisher": {
+        "@id": "https://freshridemobile.shop/#business"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://freshridemobile.shop/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cypress",
+          "item": "https://freshridemobile.shop/cypress"
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://freshridemobile.shop/cypress#faq",
       "mainEntity": [
@@ -109,8 +135,8 @@
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
       <nav id="site-nav" aria-label="Main navigation">
-        <a href="/#services">Services</a>
-        <a href="/#process">How it works</a>
+        <a href="/services/full-reset">Services</a>
+        <a href="/pricing">Pricing</a>
         <a href="/#areas">Areas</a>
         <a href="/#faq">FAQ</a>
         <a href="https://cal.com/sumitdatta/auto-detail-service">Book online</a>
@@ -171,15 +197,15 @@
         <div class="service-grid">
           <article class="service-card service-featured">
             <div class="service-image image-exterior"></div>
-            <div class="service-body"><span class="service-tag">Most complete</span><h3>Full Reset</h3><p>A thorough interior and exterior refresh for Cypress vehicles that need the whole treatment.</p><ul><li>Detailed exterior wash</li><li>Wheel and tire clean</li><li>Deep interior vacuum</li><li>Surfaces and glass</li></ul><a href="tel:+13464892266">Call to book <span>↗</span></a></div>
+            <div class="service-body"><span class="service-tag">Most complete</span><h3>Full Reset</h3><p>A thorough interior and exterior refresh for Cypress vehicles that need the whole treatment.</p><ul><li>Detailed exterior wash</li><li>Wheel and tire clean</li><li>Deep interior vacuum</li><li>Surfaces and glass</li></ul><a href="/services/full-reset">Explore Full Reset <span>↗</span></a></div>
           </article>
           <article class="service-card">
             <div class="service-image image-interior"></div>
-            <div class="service-body"><span class="service-tag">Inside</span><h3>Interior Reset</h3><p>Dust, crumbs, daily buildup—cleared out with close attention to the spaces you use most.</p><ul><li>Thorough vacuum</li><li>Dash, console and trim</li><li>Interior glass</li><li>Spot cleaning as needed</li></ul><a href="tel:+13464892266">Call to book <span>↗</span></a></div>
+            <div class="service-body"><span class="service-tag">Inside</span><h3>Interior Reset</h3><p>Dust, crumbs, daily buildup—cleared out with close attention to the spaces you use most.</p><ul><li>Thorough vacuum</li><li>Dash, console and trim</li><li>Interior glass</li><li>Spot cleaning as needed</li></ul><a href="/services/interior">Explore Interior Reset <span>↗</span></a></div>
           </article>
           <article class="service-card">
             <div class="service-image image-finish"></div>
-            <div class="service-body"><span class="service-tag">Outside</span><h3>Exterior Refresh</h3><p>A careful hand wash and finish that restores gloss without the rushed tunnel-wash treatment.</p><ul><li>Hand wash and dry</li><li>Wheels and tires</li><li>Exterior glass</li><li>Finishing protection</li></ul><a href="tel:+13464892266">Call to book <span>↗</span></a></div>
+            <div class="service-body"><span class="service-tag">Outside</span><h3>Exterior Refresh</h3><p>A careful hand wash and finish that restores gloss without the rushed tunnel-wash treatment.</p><ul><li>Hand wash and dry</li><li>Wheels and tires</li><li>Exterior glass</li><li>Finishing protection</li></ul><a href="/services/exterior">Explore Exterior Refresh <span>↗</span></a></div>
           </article>
         </div>
         <div class="add-ons"><span>Ask about</span><p>Pet hair removal</p><i></i><p>Stain treatment</p><i></i><p>Paint enhancement</p><i></i><p>Protection options</p></div>
@@ -226,7 +252,7 @@
     <footer>
       <a class="brand footer-brand" href="/"><svg class="brand-mark" viewBox="0 0 46 46" aria-hidden="true"><path d="M23 3 41 13v20L23 43 5 33V13L23 3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 28c5-1 6-10 16-10 3 0 5 1 7 3-3 0-5 1-7 3-4 4-8 7-16 4Z" fill="currentColor"/><circle cx="31.5" cy="14.5" r="2.5" fill="#b97745"/></svg><span>Fresh Ride <b>Mobile</b></span></a>
       <p>Professional mobile auto detailing across Greater Houston—at home, at work, on your time.</p>
-      <div class="footer-links"><a href="/#services">Services</a><a href="/#process">How it works</a><a href="/#faq">FAQ</a><a href="tel:+13464892266">Call +1 346-489-2266</a><a href="https://cal.com/sumitdatta/auto-detail-service">Book online</a></div>
+      <div class="footer-links"><a href="/services/full-reset">Full Reset</a><a href="/services/interior">Interior</a><a href="/services/exterior">Exterior</a><a href="/pricing">Pricing</a><a href="tel:+13464892266">Call +1 346-489-2266</a><a href="https://cal.com/sumitdatta/auto-detail-service">Book online</a></div>
       <div class="footer-links footer-areas"><a href="/katy">Katy</a><a href="/sugar-land">Sugar Land</a><a href="/the-woodlands">The Woodlands</a><a href="/cypress" aria-current="page">Cypress</a><a href="/pearland">Pearland</a></div>
       <div class="footer-bottom"><span>© <span id="year"></span> Fresh Ride Mobile</span><span>freshridemobile.shop</span></div>
     </footer>

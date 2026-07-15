@@ -7,9 +7,9 @@
     <meta name="description" content="Mobile auto detailing across Greater Houston. Interior and exterior detailing at your driveway or workplace in Houston, Katy, Sugar Land, The Woodlands, Cypress and Pearland. Call +1 346-489-2266." />
     <link rel="canonical" href="https://freshridemobile.shop/" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/assets/fonts/barlow-800.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts.css" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/header-contrast.css" />
     <title>Mobile Auto Detailing in Houston, TX | Fresh Ride Mobile</title>
@@ -67,9 +67,9 @@
             "@type": "OfferCatalog",
             "name": "Mobile detailing services",
             "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Reset", "description": "Complete interior and exterior detail: exterior wash, wheels and tires, deep interior vacuum, surfaces and glass." } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Reset", "description": "Thorough vacuum, dash, console and trim, interior glass, and spot cleaning." } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Refresh", "description": "Hand wash and dry, wheels and tires, exterior glass, and finishing protection." } }
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Reset", "url": "https://freshridemobile.shop/services/full-reset", "description": "Complete interior and exterior detail: exterior wash, wheels and tires, deep interior vacuum, surfaces and glass." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Reset", "url": "https://freshridemobile.shop/services/interior", "description": "Thorough vacuum, dash, console and trim, interior glass, and spot cleaning." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Refresh", "url": "https://freshridemobile.shop/services/exterior", "description": "Hand wash and dry, wheels and tires, exterior glass, and finishing protection." } }
             ]
           }
         },
@@ -85,6 +85,7 @@
           "@id": "https://freshridemobile.shop/#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Where can you detail my car?", "acceptedAnswer": { "@type": "Answer", "text": "At a suitable driveway, workplace, or other approved parking location anywhere in Greater Houston. Share the address on the call and we'll confirm access before booking." } },
+            { "@type": "Question", "name": "How much does mobile detailing cost?", "acceptedAnswer": { "@type": "Answer", "text": "The quote depends on vehicle size, condition, service, and requested add-ons. Fresh Ride confirms the scope and price before the visit rather than changing it on arrival." } },
             { "@type": "Question", "name": "How long does a detail take?", "acceptedAnswer": { "@type": "Answer", "text": "Timing depends on the vehicle, its condition, and the service. We'll include an expected time window when we talk." } },
             { "@type": "Question", "name": "Do I need to provide anything?", "acceptedAnswer": { "@type": "Answer", "text": "We arrive with professional detailing equipment. We'll confirm any site-specific access needs, such as space, water, or power, when booking." } },
             { "@type": "Question", "name": "Can you handle pet hair or stains?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in many cases. Mention pet hair, stains, odors, or other problem areas when calling so we can plan the right treatment." } },
@@ -105,9 +106,8 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
       <nav id="site-nav" aria-label="Main navigation">
         <a href="#services">Services</a>
-        <a href="#process">How it works</a>
+        <a href="/pricing">Pricing</a>
         <a href="#areas">Areas</a>
-        <a href="#results">Results</a>
         <a href="#faq">FAQ</a>
         <a href="https://cal.com/sumitdatta/auto-detail-service">Book online</a>
       </nav>
@@ -156,15 +156,15 @@
         <div class="service-grid">
           <article class="service-card service-featured">
             <div class="service-image image-exterior"></div>
-            <div class="service-body"><span class="service-tag">Most complete</span><h3>Full Reset</h3><p>A thorough interior and exterior refresh for vehicles that need the whole treatment.</p><ul><li>Detailed exterior wash</li><li>Wheel and tire clean</li><li>Deep interior vacuum</li><li>Surfaces and glass</li></ul><a href="tel:+13464892266">Call to book <span>↗</span></a></div>
+            <div class="service-body"><span class="service-tag">Most complete</span><h3>Full Reset</h3><p>A thorough interior and exterior refresh for vehicles that need the whole treatment.</p><ul><li>Detailed exterior wash</li><li>Wheel and tire clean</li><li>Deep interior vacuum</li><li>Surfaces and glass</li></ul><a href="/services/full-reset">Explore Full Reset <span>↗</span></a></div>
           </article>
           <article class="service-card">
             <div class="service-image image-interior"></div>
-            <div class="service-body"><span class="service-tag">Inside</span><h3>Interior Reset</h3><p>Dust, crumbs, daily buildup—cleared out with close attention to the spaces you use most.</p><ul><li>Thorough vacuum</li><li>Dash, console and trim</li><li>Interior glass</li><li>Spot cleaning as needed</li></ul><a href="tel:+13464892266">Call to book <span>↗</span></a></div>
+            <div class="service-body"><span class="service-tag">Inside</span><h3>Interior Reset</h3><p>Dust, crumbs, daily buildup—cleared out with close attention to the spaces you use most.</p><ul><li>Thorough vacuum</li><li>Dash, console and trim</li><li>Interior glass</li><li>Spot cleaning as needed</li></ul><a href="/services/interior">Explore Interior Reset <span>↗</span></a></div>
           </article>
           <article class="service-card">
             <div class="service-image image-finish"></div>
-            <div class="service-body"><span class="service-tag">Outside</span><h3>Exterior Refresh</h3><p>A careful hand wash and finish that restores gloss without the rushed tunnel-wash treatment.</p><ul><li>Hand wash and dry</li><li>Wheels and tires</li><li>Exterior glass</li><li>Finishing protection</li></ul><a href="tel:+13464892266">Call to book <span>↗</span></a></div>
+            <div class="service-body"><span class="service-tag">Outside</span><h3>Exterior Refresh</h3><p>A careful hand wash and finish that restores gloss without the rushed tunnel-wash treatment.</p><ul><li>Hand wash and dry</li><li>Wheels and tires</li><li>Exterior glass</li><li>Finishing protection</li></ul><a href="/services/exterior">Explore Exterior Refresh <span>↗</span></a></div>
           </article>
         </div>
         <div class="add-ons"><span>Ask about</span><p>Pet hair removal</p><i></i><p>Stain treatment</p><i></i><p>Paint enhancement</p><i></i><p>Protection options</p></div>
@@ -180,14 +180,14 @@
             <li><span>2</span><div><h3>Get a clear quote</h3><p>We’ll confirm the right service, timing, and what to expect before the visit.</p></div></li>
             <li><span>3</span><div><h3>Park. We’ll handle the rest.</h3><p>We detail on-site while you get on with your day.</p></div></li>
           </ol>
-          <a class="button button-light button-call" href="tel:+13464892266">Call now for pricing <span>↗</span></a>
+          <a class="button button-light" href="/pricing">See how pricing works <span>↗</span></a>
         </div>
       </section>
 
       <section class="results section" id="results">
         <div class="section-head">
-          <div><p class="section-kicker">The Fresh Ride finish</p><h2>Details you notice every time you get in.</h2></div>
-          <p>Clean edges. Clear glass. A cabin that feels calm again. The small things are the whole point.</p>
+          <div><p class="section-kicker">The details that matter</p><h2>Clean edges. Clear glass. A calmer cabin.</h2></div>
+          <p>These licensed launch images represent the services we offer. Original Fresh Ride work will replace them as the portfolio grows.</p>
         </div>
         <div class="result-gallery">
           <figure class="result-wide"><img src="/assets/result-finish.jpg" alt="Water beading on a clean car finish" /><figcaption>Finish + protection</figcaption></figure>
@@ -215,6 +215,7 @@
         <div><p class="section-kicker">Good to know</p><h2>Questions before we pull up?</h2><p class="faq-intro">Send anything else with your call and we’ll make sure you know exactly what to expect.</p></div>
         <div class="accordion">
           <details><summary>How do I book?<span>+</span></summary><p>Call +1 346-489-2266, or <a href="https://cal.com/sumitdatta/auto-detail-service">pick a time online</a> and we’ll confirm the details before the visit.</p></details>
+          <details><summary>How much does mobile detailing cost?<span>+</span></summary><p>The quote depends on vehicle size, condition, service, and requested add-ons. See <a href="/pricing">how pricing works</a>, then call so we can confirm the scope and number before the visit.</p></details>
           <details><summary>Where can you detail my car?<span>+</span></summary><p>At a suitable driveway, workplace, or other approved parking location. Share the address on the call and we’ll confirm access before booking.</p></details>
           <details><summary>How long does a detail take?<span>+</span></summary><p>Timing depends on the vehicle, its condition, and the service. We’ll include an expected time window when we talk.</p></details>
           <details><summary>Do I need to provide anything?<span>+</span></summary><p>We arrive with professional detailing equipment. We’ll confirm any site-specific access needs—such as space, water, or power—when booking.</p></details>
@@ -228,6 +229,7 @@
           <p class="section-kicker light">Your clean slate starts here</p>
           <h2>Call us and get the right quote fast.</h2>
           <p>Call +1 346-489-2266 for pricing and quick questions, or book a time online. Either way, we’ll handle the rest.</p>
+          <a class="text-link quote-pricing-link" href="/pricing">See how pricing works <span aria-hidden="true">↗</span></a>
           <div class="quote-note"><span>FR</span><p><strong>Not sure what you need?</strong><br />Describe the condition. We’ll help you choose on the call.</p></div>
         </div>
         <div class="call-card">
@@ -246,7 +248,7 @@
     <footer>
       <a class="brand footer-brand" href="#top"><svg class="brand-mark" viewBox="0 0 46 46" aria-hidden="true"><path d="M23 3 41 13v20L23 43 5 33V13L23 3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 28c5-1 6-10 16-10 3 0 5 1 7 3-3 0-5 1-7 3-4 4-8 7-16 4Z" fill="currentColor"/><circle cx="31.5" cy="14.5" r="2.5" fill="#b97745"/></svg><span>Fresh Ride <b>Mobile</b></span></a>
       <p>Professional mobile auto detailing across Greater Houston—at home, at work, on your time.</p>
-      <div class="footer-links"><a href="#services">Services</a><a href="#process">How it works</a><a href="#faq">FAQ</a><a href="tel:+13464892266">Call +1 346-489-2266</a><a href="https://cal.com/sumitdatta/auto-detail-service">Book online</a></div>
+      <div class="footer-links"><a href="/services/full-reset">Full Reset</a><a href="/services/interior">Interior</a><a href="/services/exterior">Exterior</a><a href="/pricing">Pricing</a><a href="tel:+13464892266">Call +1 346-489-2266</a><a href="https://cal.com/sumitdatta/auto-detail-service">Book online</a></div>
       <div class="footer-links footer-areas"><a href="/katy">Katy</a><a href="/sugar-land">Sugar Land</a><a href="/the-woodlands">The Woodlands</a><a href="/cypress">Cypress</a><a href="/pearland">Pearland</a></div>
       <div class="footer-bottom"><span>© <span id="year"></span> Fresh Ride Mobile</span><span>freshridemobile.shop</span></div>
     </footer>

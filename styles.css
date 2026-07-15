@@ -15,3 +15,4 @@
 .hero h1 .h1-geo{display:block;font-size:clamp(20px,2.2vw,34px);line-height:1.15;letter-spacing:-.01em;margin-bottom:.32em;color:rgba(255,255,255,.92)}
 .hero h1{font-size:clamp(56px,8.2vw,124px)}
 @media(max-width:640px){.hero h1{font-size:52px}.hero h1 .h1-geo{font-size:19px}}
+.quote-pricing-link{display:inline-flex;margin-top:24px;color:#fff}.results .section-head>p{font-size:13px;line-height:1.7}

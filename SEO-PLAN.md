@@ -219,13 +219,13 @@ are the engine.
 - [x] Sitemap submitted in Search Console 2026-07-15 (property verified same day)
 
 **Phase 2 — Conversion + depth (weeks 2-6)**
-- Pricing page — the biggest conversion gap. "Call for pricing" loses every visitor who wants a
-  number before they dial. Ranges beat silence.
-- Three service pages with `Service` schema
+- [x] Pricing/quote page — shipped without fabricated ranges; exact public ranges remain blocked on owner-supplied prices
+- [x] Three service pages with `Service`, `BreadcrumbList`, and answer-led FAQ content
+- [x] `llms.txt` and self-hosted fonts
 - Review engine running: ask at every handoff, reply within 24h
 - Real before/after gallery replacing stock imagery — first-party photos are the E-E-A-T signal
   that stock cannot fake
-- Self-host fonts
+- [x] Existing licensed stock imagery explicitly labeled as representative until first-party work is available
 
 **Phase 3 — Scale (weeks 7-16)**
 - Cities 7-12 if the first six show impressions in Search Console
