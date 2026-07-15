@@ -119,6 +119,49 @@ If a city page cannot honestly carry four, it does not get built. That is a hard
 address in schema while hiding it on GBP creates a NAP conflict. Use `areaServed` + `geo` +
 `geoRadius` instead. NAP consistency across site, GBP, and citations = name, phone, city only.
 
+## 5b. What we are deliberately NOT doing
+
+Recording the rejections matters as much as the plan — otherwise they get re-proposed in six months.
+
+**Programmatic SEO (PSEO) — rejected, and it would actively hurt.** PSEO generates pages at scale
+from a data source. It earns its keep when the data has real variation: distinct inventory per zip,
+distinct specs per product. This business has one service line and roughly twelve real cities. The
+templated version — `[city] × [service] × [vehicle type]` — produces a few hundred pages that are
+the same page with a word swapped. Google treats that as a doorway farm and can suppress the
+**entire set**, including the good city pages. The honest ceiling here is ~12 city pages and ~4
+service pages. That is a writing job, not a PSEO job.
+
+**A /houston page — rejected.** The homepage already targets "mobile detailing Houston" with that
+exact title. A second page on the same term cannibalizes it. The homepage IS the Houston page.
+
+**More than 6 city pages before the first 5 prove out — deferred.** Impressions in Search Console
+decide city 6 onward, not optimism.
+
+**Heavy GEO investment — scoped down deliberately.** See below.
+
+## 5c. GEO (AI search) — right-sized
+
+Mostly already shipped, because for a local business the useful parts of GEO are the same parts as
+normal technical SEO:
+
+| Done | What it buys |
+|---|---|
+| `AutoWash` + `FAQPage` + `WebSite` JSON-LD | The structured facts AI engines actually parse |
+| AI crawlers explicitly allowed in `robots.txt` | GPTBot, PerplexityBot, ClaudeBot, Google-Extended |
+| Answer-shaped FAQ copy, question-as-heading | Passage-level citability |
+| Named neighborhoods, corridors, real conditions | Specific, quotable facts a model can lift |
+
+| Not done | Priority |
+|---|---|
+| `llms.txt` at the root | Low — cheap, ~15 min, do it with the next batch |
+| First-party photos and named local proof | Medium — real E-E-A-T, blocked on the business |
+| Brand mentions off-site (citations, directories) | Medium — feeds AI and local both |
+
+**Honest scope:** GEO is a *small* lever for a mobile detailer. When someone asks ChatGPT "who
+details cars in Katy," the answer leans on Google Maps and review counts, not this site's HTML. GEO
+is worth about half an hour here. It is a major program for SaaS and B2B — not for this. Don't let
+the acronym pull budget away from reviews.
+
 ## 6. Technical fixes
 
 - `robots.txt` — allow all, explicitly allow `GPTBot`, `PerplexityBot`, `ClaudeBot`,
@@ -146,14 +189,36 @@ The site work does not touch the map pack. These do:
 6. **Posts** — weekly. Low direct ranking value, real CTR value.
 7. **Messaging + booking** — on, since the whole site funnels to a phone call.
 
+## 7b. Priority order — everything not yet done, ranked by real impact
+
+If only one thing on this list ever gets done, make it the first row.
+
+| # | Lever | Impact | Who | Effort |
+|---|---|---|---|---|
+| 1 | **Reviews — 1-2/week, every week, forever** | Huge. Drives the map pack, which is most of the leads | **Sumit only** | Ask at every handoff |
+| 2 | Pricing page (ranges, not "call for pricing") | High. Recovers visitors who want a number before dialing | Claude | ~1 hr |
+| 3 | First-party before/after photos | High. E-E-A-T + GBP. Stock cannot fake it | Sumit shoots, Claude places | Ongoing |
+| 4 | GBP categories + service area + hidden address | High, one-time, suspension-critical | Sumit | 15 min |
+| 5 | Submit sitemap in Search Console | Medium. Speeds up discovery | Sumit | 2 min |
+| 6 | Citations: Yelp, Apple Business Connect, Bing Places | Medium. NAP consistency feeds local + AI | Claude preps, Sumit submits | ~1 hr |
+| 7 | 3 service pages (`Service` schema) | Medium | Claude | ~1 hr |
+| 8 | `llms.txt` + GEO polish | Low-medium | Claude | 15 min |
+| 9 | Self-host fonts | Low. Removes 2 render-blocking third-party requests | Claude | 20 min |
+| 10 | Cities 6-12 | Low until the first 5 show impressions | Claude | Later |
+| — | PSEO | **Negative.** See 5b | — | Don't |
+
+Rows 1, 3, 4 are the highest-impact items on the page and none of them are code. That is the honest
+shape of local SEO for a service business: the website is table stakes, the profile and the reviews
+are the engine.
+
 ## 8. Roadmap
 
-**Phase 1 — Foundation (this week, being built now)**
-- Homepage geo signals: title, meta, H1 support line, service-area section
-- LocalBusiness + FAQPage schema, canonical, OG tags
-- `robots.txt` + `sitemap.xml`
-- Six city pages with real differentiated content
-- Submit sitemap in Search Console (property verified 2026-07-15)
+**Phase 1 — Foundation — SHIPPED 2026-07-15, live in production**
+- [x] Homepage geo signals: title, meta, H1 keyword line, service-area section (0 → 13 city mentions)
+- [x] AutoWash + WebSite + FAQPage schema, canonical, OG/Twitter tags
+- [x] `robots.txt` + `sitemap.xml` (both were 404)
+- [x] Five city pages with differentiated content, gated by `build_pages.py::check()`
+- [ ] **Submit sitemap in Search Console** — property verified 2026-07-15, still to do (Sumit)
 
 **Phase 2 — Conversion + depth (weeks 2-6)**
 - Pricing page — the biggest conversion gap. "Call for pricing" loses every visitor who wants a
