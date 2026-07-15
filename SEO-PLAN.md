@@ -199,11 +199,11 @@ If only one thing on this list ever gets done, make it the first row.
 | 2 | Pricing page (ranges, not "call for pricing") | High. Recovers visitors who want a number before dialing | Claude | ~1 hr |
 | 3 | First-party before/after photos | High. E-E-A-T + GBP. Stock cannot fake it | Sumit shoots, Claude places | Ongoing |
 | 4 | GBP categories + service area + hidden address | High, one-time, suspension-critical | Sumit | 15 min |
-| 6 | Citations: Yelp, Apple Business Connect, Bing Places | Medium. NAP consistency feeds local + AI | Claude preps, Sumit submits | ~1 hr |
-| 7 | 3 service pages (`Service` schema) | Medium | Claude | ~1 hr |
-| 8 | `llms.txt` + GEO polish | Low-medium | Claude | 15 min |
-| 9 | Self-host fonts | Low. Removes 2 render-blocking third-party requests | Claude | 20 min |
-| 10 | Cities 6-12 | Low until the first 5 show impressions | Claude | Later |
+| 5 | Citations: Yelp, Apple Business Connect, Bing Places | Medium. NAP consistency feeds local + AI | Claude preps, Sumit submits | ~1 hr |
+| 6 | 3 service pages (`Service` schema) | Medium | Claude | ~1 hr |
+| 7 | `llms.txt` + GEO polish | Low-medium | Claude | 15 min |
+| 8 | Self-host fonts | Low. Removes 2 render-blocking third-party requests | Claude | 20 min |
+| 9 | Cities 6-12 | Low until the first 5 show impressions | Claude | Later |
 | — | PSEO | **Negative.** See 5b | — | Don't |
 
 Rows 1, 3, 4 are the highest-impact items on the page and none of them are code. That is the honest
