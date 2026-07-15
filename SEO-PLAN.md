@@ -53,44 +53,43 @@ interior detailing <city>         ← service + city
 mobile detailing near me          ← GBP + proximity, not a page
 ```
 
-**City targets (phase 1 — six pages).** Chosen for vehicle density, driveway-heavy housing, and
-household income, which is what mobile detailing converts on:
+**City targets — shipped.** Chosen for vehicle density, driveway-heavy housing, and household
+income, which is what mobile detailing converts on:
 
 | City | Page | Why |
 |---|---|---|
-| Houston | `/houston` | Core metro, highest volume, hardest |
+| Houston | `/` (homepage) | Core metro, highest volume. The homepage targets this — no separate page, see 5b |
 | Katy | `/katy` | Affluent, suburban, huge driveway stock |
 | Sugar Land | `/sugar-land` | High income, low competition density |
 | The Woodlands | `/the-woodlands` | Highest income in metro, premium detail demand |
 | Cypress | `/cypress` | Fast growth, young families, two-car households |
 | Pearland | `/pearland` | Dense suburb, underserved by mobile detailers |
 
-**Phase 3 candidates** once the first six prove out: Spring, Missouri City, League City, Conroe,
-Richmond, Friendswood.
+**Later candidates** once the first five show impressions: Spring, Missouri City, League City,
+Conroe, Richmond, Friendswood.
 
-Deliberately *not* building 12 pages on day one. Six real pages beat twelve thin ones — Google
+Deliberately *not* building 12 pages on day one. Five real pages beat twelve thin ones — Google
 treats near-duplicate location pages as doorway pages and can suppress the whole set.
 
 ## 4. Site structure
 
 ```
-/                      Home — metro-wide, service hub, links to all city pages
-/houston               City page
-/katy                  City page
-/sugar-land            City page
-/the-woodlands         City page
-/cypress               City page
-/pearland              City page
-/services/full-reset   Service page (phase 2)
-/services/interior     Service page (phase 2)
-/services/exterior     Service page (phase 2)
-/pricing               Pricing page (phase 2) — high-intent, currently a phone-only black box
+/                      Home — Houston + metro-wide hub, links to every city page   [live]
+/katy                  City page                                                   [live]
+/sugar-land            City page                                                   [live]
+/the-woodlands         City page                                                   [live]
+/cypress               City page                                                   [live]
+/pearland              City page                                                   [live]
+/pricing               Pricing page — high-intent, currently a phone-only black box  [todo]
+/services/full-reset   Service page                                                [todo]
+/services/interior     Service page                                                [todo]
+/services/exterior     Service page                                                [todo]
 ```
 
-`cleanUrls: true` is already set in `vercel.json`, so `houston.html` serves at `/houston`. No build
-step needed.
+`cleanUrls: true` is already set in `vercel.json`, so `katy.html` serves at `/katy`. No build step —
+`build_pages.py` generates the city HTML and the sitemap, and the output is committed.
 
-**Internal linking:** home links to all six city pages from a service-area section. Each city page
+**Internal linking:** home links to all five city pages from the service-area section. Each city page
 links up to home and sideways to its 2-3 nearest neighbors — real geographic adjacency, not a
 mesh of every page to every page.
 
