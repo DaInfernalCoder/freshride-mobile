@@ -1,9 +1,9 @@
 import { chromium } from "/Users/sumit/.agents/skills/web-clone/node_modules/playwright-core/index.mjs";
 import fs from "node:fs/promises";
 
-const base = "http://127.0.0.1:4173";
+const base = (process.env.BASE_URL || "http://127.0.0.1:4173").replace(/\/$/, "");
 const chrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
-const output = "/private/tmp/freshride-visual-qa";
+const output = process.env.QA_OUTPUT || "/private/tmp/freshride-visual-qa";
 const pages = [
   ["home", "/index.html"],
   ["pricing", "/pricing.html"],

@@ -41,14 +41,16 @@ Complete the remaining code-backed SEO/GEO plan for the existing Houston mobile 
 - [x] Add llms.txt and update sitemap/robots
 - [x] Self-host display and body fonts
 - [x] Run local technical and visual QA
-- [ ] Sync to permanent repository and review diff
-- [ ] Commit and push main
-- [ ] Verify Vercel production and custom domain
-- [ ] Record final operating state
+- [x] Sync to permanent repository and review diff
+- [x] Commit and push main
+- [x] Verify Vercel production and custom domain
+- [x] Record final operating state
 
 ## Current state
 
-The staged build contains ten indexable pages, local fonts, expanded schema/internal links, and llms.txt. Structural validation passes for all ten pages, and Chromium desktop/mobile QA passes for the homepage, pricing page, Interior Reset page, and Katy page with no layout, navigation, console, or external-font errors.
+The site is live in Vercel production. Deployment `dpl_GbGE9AVMQZx7HA2TvKzvmNfAenp9` is Ready and aliased to both `https://freshridemobile.shop` and `https://www.freshridemobile.shop`. The apex homepage, pricing page, clean service URL, `llms.txt`, and sitemap all return HTTPS 200 responses. Chromium desktop/mobile QA also passes against the live apex domain for the homepage, pricing page, Interior Reset page, and Katy page with no layout, navigation, console, or external-font errors.
+
+The implementation commit is `05cd246` on GitHub `DaInfernalCoder/freshride-mobile` `main`. A follow-up handoff commit records this production state and makes the browser QA base URL configurable.
 
 ## Blocker
 
@@ -56,4 +58,4 @@ No blocker for the code release. Exact public price ranges and first-party befor
 
 ## Exact next action
 
-Sync the validated staged build into the permanent repository, review the Git diff, commit and push `main`, then verify the Vercel production deployment and custom domain.
+Collect confirmed public price ranges and original Fresh Ride before/after photography, then replace the custom-quote-only and representative-image states without changing the verified location/service facts.
