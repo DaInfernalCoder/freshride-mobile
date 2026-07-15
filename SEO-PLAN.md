@@ -199,7 +199,6 @@ If only one thing on this list ever gets done, make it the first row.
 | 2 | Pricing page (ranges, not "call for pricing") | High. Recovers visitors who want a number before dialing | Claude | ~1 hr |
 | 3 | First-party before/after photos | High. E-E-A-T + GBP. Stock cannot fake it | Sumit shoots, Claude places | Ongoing |
 | 4 | GBP categories + service area + hidden address | High, one-time, suspension-critical | Sumit | 15 min |
-| 5 | Submit sitemap in Search Console | Medium. Speeds up discovery | Sumit | 2 min |
 | 6 | Citations: Yelp, Apple Business Connect, Bing Places | Medium. NAP consistency feeds local + AI | Claude preps, Sumit submits | ~1 hr |
 | 7 | 3 service pages (`Service` schema) | Medium | Claude | ~1 hr |
 | 8 | `llms.txt` + GEO polish | Low-medium | Claude | 15 min |
@@ -218,7 +217,7 @@ are the engine.
 - [x] AutoWash + WebSite + FAQPage schema, canonical, OG/Twitter tags
 - [x] `robots.txt` + `sitemap.xml` (both were 404)
 - [x] Five city pages with differentiated content, gated by `build_pages.py::check()`
-- [ ] **Submit sitemap in Search Console** — property verified 2026-07-15, still to do (Sumit)
+- [x] Sitemap submitted in Search Console 2026-07-15 (property verified same day)
 
 **Phase 2 — Conversion + depth (weeks 2-6)**
 - Pricing page — the biggest conversion gap. "Call for pricing" loses every visitor who wants a
