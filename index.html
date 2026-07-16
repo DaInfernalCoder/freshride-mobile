@@ -28,72 +28,242 @@
     <!-- Service-area business: areaServed + geoRadius, never streetAddress. A published address
          here conflicts with the hidden address on the Google Business Profile. -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "AutoWash",
+      "@id": "https://freshridemobile.shop/#business",
+      "name": "Fresh Ride Mobile",
+      "description": "Mobile auto detailing serving Greater Houston. Interior and exterior detailing performed on-site at driveways, workplaces and fleet parking.",
+      "url": "https://freshridemobile.shop/",
+      "telephone": "+1-346-489-2266",
+      "image": "https://freshridemobile.shop/assets/hero-car.jpg",
+      "logo": "https://freshridemobile.shop/assets/favicon.svg",
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.7604,
+        "longitude": -95.3698
+      },
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 29.7604,
+          "longitude": -95.3698
+        },
+        "geoRadius": "64000"
+      },
+      "areaServed": [
         {
-          "@type": "AutoWash",
-          "@id": "https://freshridemobile.shop/#business",
-          "name": "Fresh Ride Mobile",
-          "description": "Mobile auto detailing serving Greater Houston. Interior and exterior detailing performed on-site at driveways, workplaces and fleet parking.",
-          "url": "https://freshridemobile.shop/",
-          "telephone": "+1-346-489-2266",
-          "image": "https://freshridemobile.shop/assets/hero-car.jpg",
-          "logo": "https://freshridemobile.shop/assets/favicon.svg",
-          "priceRange": "$$",
-          "currenciesAccepted": "USD",
-          "address": { "@type": "PostalAddress", "addressLocality": "Houston", "addressRegion": "TX", "addressCountry": "US" },
-          "geo": { "@type": "GeoCoordinates", "latitude": 29.7604, "longitude": -95.3698 },
-          "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 29.7604, "longitude": -95.3698 },
-            "geoRadius": "64000"
-          },
-          "areaServed": [
-            { "@type": "City", "name": "Houston", "sameAs": "https://en.wikipedia.org/wiki/Houston" },
-            { "@type": "City", "name": "Katy", "sameAs": "https://en.wikipedia.org/wiki/Katy,_Texas" },
-            { "@type": "City", "name": "Sugar Land", "sameAs": "https://en.wikipedia.org/wiki/Sugar_Land,_Texas" },
-            { "@type": "City", "name": "The Woodlands", "sameAs": "https://en.wikipedia.org/wiki/The_Woodlands,_Texas" },
-            { "@type": "City", "name": "Cypress", "sameAs": "https://en.wikipedia.org/wiki/Cypress,_Texas" },
-            { "@type": "City", "name": "Pearland", "sameAs": "https://en.wikipedia.org/wiki/Pearland,_Texas" },
-            { "@type": "City", "name": "Spring" },
-            { "@type": "City", "name": "Missouri City" },
-            { "@type": "City", "name": "League City" },
-            { "@type": "City", "name": "Conroe" },
-            { "@type": "City", "name": "Richmond" },
-            { "@type": "City", "name": "Friendswood" }
-          ],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Mobile detailing services",
-            "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Reset", "url": "https://freshridemobile.shop/services/full-reset", "description": "Complete interior and exterior detail: exterior wash, wheels and tires, deep interior vacuum, surfaces and glass." } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Reset", "url": "https://freshridemobile.shop/services/interior", "description": "Thorough vacuum, dash, console and trim, interior glass, and spot cleaning." } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Refresh", "url": "https://freshridemobile.shop/services/exterior", "description": "Hand wash and dry, wheels and tires, exterior glass, and finishing protection." } }
-            ]
-          }
+          "@type": "City",
+          "name": "Houston",
+          "sameAs": "https://en.wikipedia.org/wiki/Houston"
         },
         {
-          "@type": "WebSite",
-          "@id": "https://freshridemobile.shop/#website",
-          "url": "https://freshridemobile.shop/",
-          "name": "Fresh Ride Mobile",
-          "publisher": { "@id": "https://freshridemobile.shop/#business" }
+          "@type": "City",
+          "name": "Katy",
+          "sameAs": "https://en.wikipedia.org/wiki/Katy,_Texas"
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://freshridemobile.shop/#faq",
-          "mainEntity": [
-            { "@type": "Question", "name": "Where can you detail my car?", "acceptedAnswer": { "@type": "Answer", "text": "At a suitable driveway, workplace, or other approved parking location anywhere in Greater Houston. Share the address on the call and we'll confirm access before booking." } },
-            { "@type": "Question", "name": "How much does mobile detailing cost?", "acceptedAnswer": { "@type": "Answer", "text": "The quote depends on vehicle size, condition, service, and requested add-ons. Fresh Ride confirms the scope and price before the visit rather than changing it on arrival." } },
-            { "@type": "Question", "name": "How long does a detail take?", "acceptedAnswer": { "@type": "Answer", "text": "Timing depends on the vehicle, its condition, and the service. We'll include an expected time window when we talk." } },
-            { "@type": "Question", "name": "Do I need to provide anything?", "acceptedAnswer": { "@type": "Answer", "text": "We arrive with professional detailing equipment. We'll confirm any site-specific access needs, such as space, water, or power, when booking." } },
-            { "@type": "Question", "name": "Can you handle pet hair or stains?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in many cases. Mention pet hair, stains, odors, or other problem areas when calling so we can plan the right treatment." } },
-            { "@type": "Question", "name": "What happens if the weather changes?", "acceptedAnswer": { "@type": "Answer", "text": "If weather makes the service unsafe or would compromise the finish, we'll coordinate a better time with you." } }
+          "@type": "City",
+          "name": "Sugar Land",
+          "sameAs": "https://en.wikipedia.org/wiki/Sugar_Land,_Texas"
+        },
+        {
+          "@type": "City",
+          "name": "The Woodlands",
+          "sameAs": "https://en.wikipedia.org/wiki/The_Woodlands,_Texas"
+        },
+        {
+          "@type": "City",
+          "name": "Cypress",
+          "sameAs": "https://en.wikipedia.org/wiki/Cypress,_Texas"
+        },
+        {
+          "@type": "City",
+          "name": "Pearland",
+          "sameAs": "https://en.wikipedia.org/wiki/Pearland,_Texas"
+        },
+        {
+          "@type": "City",
+          "name": "Spring"
+        },
+        {
+          "@type": "City",
+          "name": "Missouri City"
+        },
+        {
+          "@type": "City",
+          "name": "League City"
+        },
+        {
+          "@type": "City",
+          "name": "Conroe"
+        },
+        {
+          "@type": "City",
+          "name": "Richmond"
+        },
+        {
+          "@type": "City",
+          "name": "Friendswood"
+        }
+      ],
+      "hasOfferCatalog": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Mobile detailing services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Full Reset",
+                "url": "https://freshridemobile.shop/services/full-reset",
+                "description": "Complete interior and exterior detail: exterior wash, wheels and tires, deep interior vacuum, surfaces and glass."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Interior Reset",
+                "url": "https://freshridemobile.shop/services/interior",
+                "description": "Thorough vacuum, dash, console and trim, interior glass, and spot cleaning."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Exterior Refresh",
+                "url": "https://freshridemobile.shop/services/exterior",
+                "description": "Hand wash and dry, wheels and tires, exterior glass, and finishing protection."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Detailing packages",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Basic Detail",
+              "price": "150",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://freshridemobile.shop/#pricing",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Basic Detail",
+                "description": "Interior essentials: complete interior wipe down, triple-stage vacuuming, and mat cleaning and refresh."
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Premium Detail",
+              "price": "200",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://freshridemobile.shop/#pricing",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Premium Detail",
+                "description": "Full interior restoration: triple-stage vacuuming, seat and carpet stain removal, cabin freshener, full dust removal, window cleaning and treatment, deep steam cleaning, fabric and carpet extraction, complete interior shampoo, leather conditioning, and UV-protectant plastic coating."
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Exterior Wash",
+              "price": "50",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://freshridemobile.shop/#pricing",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Exterior Wash",
+                "description": "Add-on to either detail: hand wash exterior, rim detailing, tire deep clean, tire shine application, door jamb and panel cleaning, and spot-free hand dry."
+              }
+            }
           ]
         }
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://freshridemobile.shop/#website",
+      "url": "https://freshridemobile.shop/",
+      "name": "Fresh Ride Mobile",
+      "publisher": {
+        "@id": "https://freshridemobile.shop/#business"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://freshridemobile.shop/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can you detail my car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At a suitable driveway, workplace, or other approved parking location anywhere in Greater Houston. Share the address on the call and we'll confirm access before booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does mobile detailing cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The quote depends on vehicle size, condition, service, and requested add-ons. Fresh Ride confirms the scope and price before the visit rather than changing it on arrival."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a detail take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Timing depends on the vehicle, its condition, and the service. We'll include an expected time window when we talk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to provide anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We arrive with professional detailing equipment. We'll confirm any site-specific access needs, such as space, water, or power, when booking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you handle pet hair or stains?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, in many cases. Mention pet hair, stains, odors, or other problem areas when calling so we can plan the right treatment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if the weather changes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If weather makes the service unsafe or would compromise the finish, we'll coordinate a better time with you."
+          }
+        }
+      ]
     }
+  ]
+}
     </script>
   </head>
   <body>
@@ -151,7 +321,7 @@
       <section class="services section" id="services">
         <div class="section-head">
           <div><p class="section-kicker">Choose your reset</p><h2>Built around what your car needs.</h2></div>
-          <p>Every vehicle is different. Choose a starting point and we’ll shape the final quote around its size and condition.</p>
+          <p>Every vehicle is different. Choose a starting point, then see the flat rate for each package below.</p>
         </div>
         <div class="service-grid">
           <article class="service-card service-featured">
@@ -168,6 +338,63 @@
           </article>
         </div>
         <div class="add-ons"><span>Ask about</span><p>Pet hair removal</p><i></i><p>Stain treatment</p><i></i><p>Paint enhancement</p><i></i><p>Protection options</p></div>
+      </section>
+
+      <section class="rates" id="pricing" aria-labelledby="pricing-title">
+        <div class="rates-shell">
+          <div class="rates-head">
+            <p class="rates-eyebrow">Pricing</p>
+            <h2 id="pricing-title">Flat rates. Booked online in a minute.</h2>
+            <p class="rates-intro">Pick the level of care your vehicle needs. Add the exterior wash to either detail.</p>
+          </div>
+
+          <div class="rate-grid">
+            <article class="rate-card">
+              <h3>Basic Detail</h3>
+              <p class="rate-figure">$150</p>
+              <p class="rate-note">Interior essentials, handled properly.</p>
+              <ul class="rate-list">
+                <li>Complete Interior Wipe Down</li>
+                <li>Triple-Stage Vacuuming</li>
+                <li>Mat Cleaning &amp; Refresh</li>
+              </ul>
+              <a class="rate-cta" href="https://cal.com/sumitdatta/auto-detail-service" target="_blank" rel="noopener">Book Online</a>
+            </article>
+            <article class="rate-card rate-card-featured">
+              <span class="rate-badge">Most booked</span>
+              <h3>Premium Detail</h3>
+              <p class="rate-figure">$200</p>
+              <p class="rate-note">The full interior restoration.</p>
+              <ul class="rate-list">
+                <li>Triple-Stage Vacuuming</li>
+                <li>Seat &amp; Carpet Stain Removal</li>
+                <li>Interior Cabin Freshener</li>
+                <li>Full Dust Removal</li>
+                <li>Window Cleaning &amp; Treatment</li>
+                <li>Deep Steam Cleaning</li>
+                <li>Fabric &amp; Carpet Extraction</li>
+                <li>Complete Interior Shampoo</li>
+                <li>Leather Conditioning &amp; Care</li>
+                <li>UV-Protectant Plastic Coating</li>
+              </ul>
+              <a class="rate-cta" href="https://cal.com/sumitdatta/auto-detail-service" target="_blank" rel="noopener">Book Online</a>
+            </article>
+            <article class="rate-card">
+              <h3>Exterior Wash</h3>
+              <p class="rate-figure">+$50</p>
+              <p class="rate-note">Add-on to either detail above.</p>
+              <ul class="rate-list">
+                <li>Hand Wash Exterior</li>
+                <li>Rim Detailing</li>
+                <li>Tire Deep Clean</li>
+                <li>Tire Shine Application</li>
+                <li>Door Jamb &amp; Panel Cleaning</li>
+                <li>Spot-Free Hand Dry</li>
+              </ul>
+              <a class="rate-cta" href="https://cal.com/sumitdatta/auto-detail-service" target="_blank" rel="noopener">Book Online</a>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section class="process section" id="process">
