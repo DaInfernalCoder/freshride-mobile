@@ -169,6 +169,7 @@ def footer():
     return f'''<footer>
       <div class="footer-brand-wrap">{brand()}</div>
       <p>Professional mobile auto detailing across Greater Houston—at home, at work, on your time.</p>
+      <p>18726 University Blvd, Sugar Land, TX 77479</p>
       <div class="footer-links"><a href="/services/full-reset">Full Reset</a><a href="/services/interior">Interior</a><a href="/services/exterior">Exterior</a><a href="/pricing">Pricing</a><a href="{PHONE_HREF}">Call</a><a href="{BOOK_URL}">Book online</a></div>
       <div class="footer-links footer-areas"><a href="/katy">Katy</a><a href="/sugar-land">Sugar Land</a><a href="/the-woodlands">The Woodlands</a><a href="/cypress">Cypress</a><a href="/pearland">Pearland</a></div>
       <div class="footer-bottom"><span>© <span id="year"></span> Fresh Ride Mobile</span><span>freshridemobile.shop</span></div>
@@ -217,7 +218,7 @@ def business_ref():
         "url": f"{SITE}/",
         "telephone": PHONE_SCHEMA,
         "priceRange": "$$",
-        "address": {"@type": "PostalAddress", "addressLocality": "Houston", "addressRegion": "TX", "addressCountry": "US"},
+        "address": {"@type": "PostalAddress", "streetAddress": "18726 University Blvd", "addressLocality": "Sugar Land", "addressRegion": "TX", "postalCode": "77479", "addressCountry": "US"},
         "areaServed": [
             {"@type": "City", "name": "Houston"}, {"@type": "City", "name": "Katy"},
             {"@type": "City", "name": "Sugar Land"}, {"@type": "City", "name": "The Woodlands"},

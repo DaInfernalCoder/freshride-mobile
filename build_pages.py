@@ -219,11 +219,9 @@ def schema(c):
                 "telephone": PHONE_SCHEMA,
                 "image": f"{SITE}/assets/hero-car.jpg",
                 "priceRange": "$$",
-                # SAB: locality only, never streetAddress — a published address conflicts
-                # with the hidden address on the Google Business Profile.
-                "address": {"@type": "PostalAddress", "addressLocality": "Houston",
-                            "addressRegion": "TX", "addressCountry": "US"},
-                "geo": {"@type": "GeoCoordinates", "latitude": c["lat"], "longitude": c["lon"]},
+                "address": {"@type": "PostalAddress", "streetAddress": "18726 University Blvd",
+                            "addressLocality": "Sugar Land", "addressRegion": "TX",
+                            "postalCode": "77479", "addressCountry": "US"},
                 "areaServed": {"@type": "City", "name": c["name"],
                                **({"sameAs": c["wiki"]} if c.get("wiki") else {})},
             },
@@ -433,6 +431,7 @@ def page(c):
     <footer>
       <a class="brand footer-brand" href="/"><svg class="brand-mark" viewBox="0 0 46 46" aria-hidden="true"><path d="M23 3 41 13v20L23 43 5 33V13L23 3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 28c5-1 6-10 16-10 3 0 5 1 7 3-3 0-5 1-7 3-4 4-8 7-16 4Z" fill="currentColor"/><circle cx="31.5" cy="14.5" r="2.5" fill="#b97745"/></svg><span>Fresh Ride <b>Mobile</b></span></a>
       <p>Professional mobile auto detailing across Greater Houston—at home, at work, on your time.</p>
+      <p>18726 University Blvd, Sugar Land, TX 77479</p>
       <div class="footer-links"><a href="/services/full-reset">Full Reset</a><a href="/services/interior">Interior</a><a href="/services/exterior">Exterior</a><a href="/pricing">Pricing</a><a href="{PHONE_HREF}">Call {PHONE_DISPLAY}</a><a href="https://cal.com/sumitdatta/auto-detail-service">Book online</a></div>
       <div class="footer-links footer-areas">{nav(c['slug'])}</div>
       <div class="footer-bottom"><span>© <span id="year"></span> Fresh Ride Mobile</span><span>freshridemobile.shop</span></div>
