@@ -9,6 +9,7 @@ Complete the remaining code-backed SEO/GEO plan for the existing Houston mobile 
 - Brand: Fresh Ride Mobile
 - Service: mobile auto detailing
 - Market: Greater Houston, Texas
+- Street address: 18726 University Blvd, Sugar Land, TX 77479
 - Phone: +1 346-489-2266
 - Domain: freshridemobile.shop
 - Booking: https://cal.com/sumitdatta/auto-detail-service
