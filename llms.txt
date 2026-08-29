@@ -14,3 +14,10 @@
 - Service: Appointment-based mobile car detailing
 - Booking: https://cal.com/sumitdatta/auto-detail-service
 - Google review profile: https://g.page/r/Ca08XiKRRIg3EBM/review
+
+<!-- SEO-NEXT:START -->
+## Expanded pages
+- [Services](https://freshridemobile.shop/services/)
+- [About](https://freshridemobile.shop/about/)
+- [Contact](https://freshridemobile.shop/contact/)
+<!-- SEO-NEXT:END -->
