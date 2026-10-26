@@ -3,9 +3,9 @@
 > Appointment-based mobile car detailing in Sugar Land, Texas.
 
 ## Primary pages
-- [Homepage](https://freshridemobile.shop/): Business, service, pricing, process, and contact information.
-- [Services](https://freshridemobile.shop/#services): Interior, exterior, and complete vehicle detailing options.
-- [Local service information](https://freshridemobile.shop/#local-detailing): How mobile detailing works in Sugar Land.
+- [Homepage](https://sugarlandcardetailing.shop/): Business, service, pricing, process, and contact information.
+- [Services](https://sugarlandcardetailing.shop/#services): Interior, exterior, and complete vehicle detailing options.
+- [Local service information](https://sugarlandcardetailing.shop/#local-detailing): How mobile detailing works in Sugar Land.
 
 ## Verified business facts
 - Business name: Fresh Ride Mobile Car Detailing Houston
@@ -17,7 +17,7 @@
 
 <!-- SEO-NEXT:START -->
 ## Expanded pages
-- [Services](https://freshridemobile.shop/services/)
-- [About](https://freshridemobile.shop/about/)
-- [Contact](https://freshridemobile.shop/contact/)
+- [Services](https://sugarlandcardetailing.shop/services/)
+- [About](https://sugarlandcardetailing.shop/about/)
+- [Contact](https://sugarlandcardetailing.shop/contact/)
 <!-- SEO-NEXT:END -->

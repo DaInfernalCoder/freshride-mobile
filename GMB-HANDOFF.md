@@ -11,7 +11,7 @@ Complete the remaining code-backed SEO/GEO plan for the existing Houston mobile 
 - Market: Greater Houston, Texas
 - Street address: 18726 University Blvd, Sugar Land, TX 77479
 - Phone: +1 346-489-2266
-- Domain: freshridemobile.shop
+- Domain: sugarlandcardetailing.shop
 - Booking: https://cal.com/sumitdatta/auto-detail-service
 - Deployment: GitHub `DaInfernalCoder/freshride-mobile` connected to Vercel project `freshride-mobile`
 - Service-area business: no public street address
@@ -49,7 +49,7 @@ Complete the remaining code-backed SEO/GEO plan for the existing Houston mobile 
 
 ## Current state
 
-The site is live in Vercel production. The latest connected `main` deployment is Ready and aliased to both `https://freshridemobile.shop` and `https://www.freshridemobile.shop`. The apex homepage, pricing page, clean service URL, `llms.txt`, and sitemap all return HTTPS 200 responses. Chromium desktop/mobile QA also passes against the live apex domain for the homepage, pricing page, Interior Reset page, and Katy page with no layout, navigation, console, or external-font errors.
+The site is live in Vercel production. The latest connected `main` deployment is Ready and aliased to both `https://sugarlandcardetailing.shop` and `https://www.sugarlandcardetailing.shop`. The apex homepage, pricing page, clean service URL, `llms.txt`, and sitemap all return HTTPS 200 responses. Chromium desktop/mobile QA also passes against the live apex domain for the homepage, pricing page, Interior Reset page, and Katy page with no layout, navigation, console, or external-font errors.
 
 The implementation commit is `05cd246` on GitHub `DaInfernalCoder/freshride-mobile` `main`. The handoff commits record this production state and make the browser QA base URL configurable.
 

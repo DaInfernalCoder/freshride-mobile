@@ -13,4 +13,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://freshridemobile.shop/sitemap.xml
+Sitemap: https://sugarlandcardetailing.shop/sitemap.xml

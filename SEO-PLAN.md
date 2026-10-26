@@ -1,6 +1,6 @@
 # Fresh Ride Mobile — SEO Plan
 
-**Domain:** freshridemobile.shop · **Business:** mobile auto detailing, service-area business (SAB)
+**Domain:** sugarlandcardetailing.shop · **Business:** mobile auto detailing, service-area business (SAB)
 **Market:** Greater Houston metro · **GBP:** exists + verified · **Phone:** +1 346-489-2266
 
 ---

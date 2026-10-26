@@ -1,6 +1,6 @@
 # Fresh Ride Mobile
 
-Marketing site for [freshridemobile.shop](https://freshridemobile.shop), a mobile auto detailing service.
+Marketing site for [sugarlandcardetailing.shop](https://sugarlandcardetailing.shop), a mobile auto detailing service.
 
 ## Local preview
 

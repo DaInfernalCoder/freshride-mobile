@@ -9,7 +9,7 @@ import html
 import json
 import os
 
-SITE = "https://freshridemobile.shop"
+SITE = "https://sugarlandcardetailing.shop"
 PHONE_DISPLAY = "+1 346-489-2266"
 PHONE_HREF = "tel:+13464892266"
 PHONE_SCHEMA = "+1-346-489-2266"
@@ -172,7 +172,7 @@ def footer():
       <p>18726 University Blvd, Sugar Land, TX 77479</p>
       <div class="footer-links"><a href="/services/full-reset">Full Reset</a><a href="/services/interior">Interior</a><a href="/services/exterior">Exterior</a><a href="/pricing">Pricing</a><a href="{PHONE_HREF}">Call</a><a href="{BOOK_URL}">Book online</a></div>
       <div class="footer-links footer-areas"><a href="/katy">Katy</a><a href="/sugar-land">Sugar Land</a><a href="/the-woodlands">The Woodlands</a><a href="/cypress">Cypress</a><a href="/pearland">Pearland</a></div>
-      <div class="footer-bottom"><span>© <span id="year"></span> Fresh Ride Mobile</span><span>freshridemobile.shop</span></div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Fresh Ride Mobile</span><span>sugarlandcardetailing.shop</span></div>
     </footer>
     <div class="mobile-bar"><a class="mobile-call-bar" href="{PHONE_HREF}">Call {PHONE_DISPLAY}</a><a class="mobile-book-bar" href="{BOOK_URL}">Book</a></div>
     <script src="/script.js"></script>'''
