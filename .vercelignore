@@ -8,6 +8,7 @@
 *.pyc
 *.txt
 !robots.txt
+!llms.txt
 scripts/
 test/
 tests/
