@@ -1,23 +1,71 @@
-# Fresh Ride Mobile Car Detailing Houston
+# Sugar Land Car Detailing
 
-> Appointment-based mobile car detailing in Sugar Land, Texas.
-
-## Primary pages
-- [Homepage](https://sugarlandcardetailing.shop/): Business, service, pricing, process, and contact information.
-- [Services](https://sugarlandcardetailing.shop/#services): Interior, exterior, and complete vehicle detailing options.
-- [Local service information](https://sugarlandcardetailing.shop/#local-detailing): How mobile detailing works in Sugar Land.
+> Appointment-based mobile car detailing in Sugar Land, Texas, serving Fort Bend County and Greater Houston.
 
 ## Verified business facts
-- Business name: Fresh Ride Mobile Car Detailing Houston
-- Primary service area: Sugar Land, Texas
+- Business name: Sugar Land Car Detailing
+- Address: 18726 University Blvd, Sugar Land, TX 77479
 - Telephone: +1 346-489-2266
-- Service: Appointment-based mobile car detailing
+- Service: Appointment-based mobile car detailing (we travel to the customer)
 - Booking: https://cal.com/sumitdatta/auto-detail-service
 - Google review profile: https://g.page/r/Ca08XiKRRIg3EBM/review
 
-<!-- SEO-NEXT:START -->
-## Expanded pages
-- [Services](https://sugarlandcardetailing.shop/services/)
-- [About](https://sugarlandcardetailing.shop/about/)
-- [Contact](https://sugarlandcardetailing.shop/contact/)
-<!-- SEO-NEXT:END -->
+## Primary pages
+- [Homepage](https://sugarlandcardetailing.shop/)
+- [Services](https://sugarlandcardetailing.shop/services)
+- [Pricing](https://sugarlandcardetailing.shop/pricing)
+- [Service areas](https://sugarlandcardetailing.shop/areas)
+- [About](https://sugarlandcardetailing.shop/about)
+- [Contact](https://sugarlandcardetailing.shop/contact)
+
+## Services
+- [Full Reset (interior + exterior)](https://sugarlandcardetailing.shop/services/full-reset)
+- [Interior Detailing](https://sugarlandcardetailing.shop/services/interior)
+- [Exterior Detailing](https://sugarlandcardetailing.shop/services/exterior)
+- [Car Waxing](https://sugarlandcardetailing.shop/services/car-waxing)
+- [Clay-Bar Treatment](https://sugarlandcardetailing.shop/services/clay-bar-treatment)
+- [Car Seat Shampooing](https://sugarlandcardetailing.shop/services/seat-shampooing)
+- [Interior Steam Cleaning](https://sugarlandcardetailing.shop/services/steam-cleaning)
+- [Engine-Bay Detailing](https://sugarlandcardetailing.shop/services/engine-detailing)
+- [Ceramic Coating](https://sugarlandcardetailing.shop/services/ceramic-coating)
+- [Paint Correction, Buffing & Polishing](https://sugarlandcardetailing.shop/services/paint-correction)
+- [Headlight Restoration](https://sugarlandcardetailing.shop/services/headlight-restoration)
+- [Pet Hair Removal](https://sugarlandcardetailing.shop/services/pet-hair-removal)
+- [Car Odor Removal](https://sugarlandcardetailing.shop/services/odor-removal)
+- [Mobile Car Wash](https://sugarlandcardetailing.shop/services/mobile-car-wash)
+
+## Service areas
+- [Sugar Land, TX](https://sugarlandcardetailing.shop/sugar-land)
+- [First Colony, TX](https://sugarlandcardetailing.shop/areas/first-colony)
+- [Telfair, TX](https://sugarlandcardetailing.shop/areas/telfair)
+- [Riverstone, TX](https://sugarlandcardetailing.shop/areas/riverstone)
+- [New Territory, TX](https://sugarlandcardetailing.shop/areas/new-territory)
+- [Greatwood, TX](https://sugarlandcardetailing.shop/areas/greatwood)
+- [Stafford, TX](https://sugarlandcardetailing.shop/areas/stafford)
+- [Missouri City, TX](https://sugarlandcardetailing.shop/areas/missouri-city)
+- [Sienna, TX](https://sugarlandcardetailing.shop/areas/sienna)
+- [Meadows Place, TX](https://sugarlandcardetailing.shop/areas/meadows-place)
+- [Four Corners, TX](https://sugarlandcardetailing.shop/areas/four-corners)
+- [Richmond, TX](https://sugarlandcardetailing.shop/areas/richmond)
+- [Pecan Grove, TX](https://sugarlandcardetailing.shop/areas/pecan-grove)
+- [Aliana, TX](https://sugarlandcardetailing.shop/areas/aliana)
+- [Rosenberg, TX](https://sugarlandcardetailing.shop/areas/rosenberg)
+- [Thompsons, TX](https://sugarlandcardetailing.shop/areas/thompsons)
+- [Fulshear, TX](https://sugarlandcardetailing.shop/areas/fulshear)
+- [Cinco Ranch, TX](https://sugarlandcardetailing.shop/areas/cinco-ranch)
+- [Katy, TX](https://sugarlandcardetailing.shop/katy)
+- [Mission Bend, TX](https://sugarlandcardetailing.shop/areas/mission-bend)
+- [Fresno, TX](https://sugarlandcardetailing.shop/areas/fresno)
+- [Arcola, TX](https://sugarlandcardetailing.shop/areas/arcola)
+- [Pearland, TX](https://sugarlandcardetailing.shop/pearland)
+- [Needville, TX](https://sugarlandcardetailing.shop/areas/needville)
+- [Booth, TX](https://sugarlandcardetailing.shop/areas/booth)
+- [Simonton, TX](https://sugarlandcardetailing.shop/areas/simonton)
+- [Beasley, TX](https://sugarlandcardetailing.shop/areas/beasley)
+- [Orchard, TX](https://sugarlandcardetailing.shop/areas/orchard)
+- [Houston, TX](https://sugarlandcardetailing.shop/areas/houston)
+- [Sharpstown, TX](https://sugarlandcardetailing.shop/areas/sharpstown)
+- [Crabb, TX](https://sugarlandcardetailing.shop/areas/crabb)
+- [Fort Bend County, TX](https://sugarlandcardetailing.shop/areas/fort-bend-county)
+- [Cypress, TX](https://sugarlandcardetailing.shop/cypress)
+- [The Woodlands, TX](https://sugarlandcardetailing.shop/the-woodlands)

@@ -60,3 +60,7 @@ No blocker for the code release. Exact public price ranges and first-party befor
 ## Exact next action
 
 Collect confirmed public price ranges and original Fresh Ride before/after photography, then replace the custom-quote-only and representative-image states without changing the verified location/service facts.
+
+## October 25 approved domain migration
+
+Owner approved `sugarlandcardetailing.shop` as the directly hosted primary website and permanent redirects from `freshridemobile.shop` and its www alias. Registration verified: one year, high privacy, auto-renew off. Migration commit pushed and Vercel production READY; canonicals, schema URLs, sitemaps, robots and local website records updated. DNS is being connected through Spaceship A/CNAME records while retaining nameservers. Final HTTPS/route/redirect verification is recorded centrally in `_GMB Operations/exact-match-domains/live-verification.json`; do not assume forwarding is complete without its per-domain result. Preserve business name, phone, address, Google profile and review state.

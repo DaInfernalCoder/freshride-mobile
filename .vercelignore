@@ -21,3 +21,6 @@ SOURCES*
 registry-record.json
 Icon?
 **/Icon?
+
+.sitemap-state.json
+_seo-research/

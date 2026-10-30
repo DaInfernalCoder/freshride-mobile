@@ -76,7 +76,7 @@ def resolve_clean_url(root, ref):
 
 def main():
     root = Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
-    pages = sorted([root / "index.html", *root.glob("*.html"), *root.glob("services/*.html")])
+    pages = sorted(page for page in root.rglob("*.html") if not any(part in {".git", "node_modules", ".vercel"} for part in page.parts))
     pages = list(dict.fromkeys(page for page in pages if page.is_file()))
     errors = []
     titles = {}
@@ -121,8 +121,8 @@ def main():
     sitemap_path = root / "sitemap.xml"
     namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     sitemap_urls = [node.text for node in ET.parse(sitemap_path).findall("s:url/s:loc", namespace)]
-    sitemap_paths = {urlparse(url).path.rstrip("/") or "/" for url in sitemap_urls}
-    canonical_paths = {urlparse(url).path.rstrip("/") or "/" for url in canonicals}
+    sitemap_paths = {urlparse(url).path or "/" for url in sitemap_urls}
+    canonical_paths = {urlparse(url).path or "/" for url in canonicals}
     if sitemap_paths != canonical_paths:
         errors.append(f"sitemap/canonical mismatch: sitemap={sorted(sitemap_paths)} canonical={sorted(canonical_paths)}")
 
