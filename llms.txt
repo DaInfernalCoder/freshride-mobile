@@ -1,9 +1,9 @@
-# Sugar Land Car Detailing
+# Sugar Land Mobile Car Detailing
 
 > Appointment-based mobile car detailing in Sugar Land, Texas, serving Fort Bend County and Greater Houston.
 
 ## Verified business facts
-- Business name: Sugar Land Car Detailing
+- Business name: Sugar Land Mobile Car Detailing
 - Address: 18726 University Blvd, Sugar Land, TX 77479
 - Telephone: +1 346-489-2266
 - Service: Appointment-based mobile car detailing (we travel to the customer)
