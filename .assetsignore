@@ -20,3 +20,4 @@ node_modules
 /scripts/visual_qa.mjs
 /assets/fonts/OFL-Manrope.txt
 /assets/fonts/OFL-BarlowCondensed.txt
+.github
